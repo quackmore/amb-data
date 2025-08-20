@@ -1,0 +1,48 @@
+[
+  {
+    "id": "20250730-mostraDelFungo",
+    "title": "49a Mostra Del Fungo",
+    "excerpt": "Dal 9 al 17 Agosto 2025 torna la tradizionale Mostra del Fungo e della Natura di Villa d'Ogna. Un evento imperdibile che celebra la...",
+    "category": "eventi",
+    "date": "2025-07-30",
+    "author": "author",
+    "featured_image": "20250730-mostraDelFungo/mostradelfungo.jpeg",
+    "images": [
+      "mostradelfungo.jpeg",
+      "amanita_habitat.jpeg"
+    ],
+    "slug": "20250730-mostraDelFungo/20250730-mostraDelFungo.html",
+    "tags": []
+  },
+  {
+    "id": "20250808-ispettoratoMicologico2025",
+    "title": "ATS Bergamo attiva l'Ispettorato Micologico per la stagione 2025",
+    "excerpt": "Dal 18 agosto al 28 novembre 2025, l'Agenzia di Tutela della Salute di Bergamo offre gratuitamente il servizio di verifica di...",
+    "category": "eventi",
+    "date": "2025-08-08",
+    "author": "author",
+    "featured_image": "20250808-ispettoratoMicologico2025/micologo_lavoro.jpg",
+    "images": [
+      "micologo_lavoro.jpg",
+      "funghi_analisi.jpg"
+    ],
+    "slug": "20250808-ispettoratoMicologico2025/20250808-ispettoratoMicologico2025.html",
+    "tags": []
+  },
+  {
+    "id": "20250730-mostraDelFungoApertura",
+    "title": "Inaugurata la 49ª Mostra del Fungo: oltre 260 specie in esposizione",
+    "excerpt": "Aperta al pubblico la tradizionale manifestazione di Villa d'Ogna. Il primo giorno di mostra sono gia state identificate ed...",
+    "category": "eventi",
+    "date": "2025-08-09",
+    "author": "author",
+    "featured_image": "20250730-mostraDelFungoApertura/mostradelfungo.jpeg",
+    "images": [
+      "mostradelfungo.jpeg",
+      "ramariaparabotrytis.jpg",
+      "visitatori_mostra.jpg"
+    ],
+    "slug": "20250730-mostraDelFungoApertura/20250809-mostradelFungoApertura.html",
+    "tags": []
+  }
+]

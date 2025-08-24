@@ -1,0 +1,101 @@
+name: Daily Content Sync from Repo2
+
+on:
+  schedule:
+    # Run daily at 9:00 AM UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+    # Allow manual trigger from GitHub UI
+
+jobs:
+  sync-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout main repository (repo1)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout source repository (repo2)
+        uses: actions/checkout@v4
+        with:
+          repository: yourusername/repo2  # Replace with actual repo2 name
+          path: temp-repo2
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create generated-data directory if it doesn't exist
+        run: |
+          mkdir -p generated-data
+
+      - name: Copy content from repo2 to generated-data
+        run: |
+          # Remove existing content to ensure clean sync
+          rm -rf generated-data/*
+          
+          # Copy all content from repo2 to generated-data
+          cp -r temp-repo2/* generated-data/
+          
+          # Optional: Remove .git directory from copied content
+          rm -rf generated-data/.git
+          
+          echo "Content copied successfully"
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD -- generated-data/; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add generated-data/
+          git commit -m "Daily sync: Update content from repo2 ($(date +'%Y-%m-%d %H:%M:%S UTC'))"
+          git push
+
+      - name: Clean up temporary files
+        run: |
+          rm -rf temp-repo2
+
+      - name: Summary
+        run: |
+          if [[ "${{ steps.check_changes.outputs.changes }}" == "true" ]]; then
+            echo "✅ Content synced successfully with changes"
+          else
+            echo "ℹ️ Content synced - no changes detected"
+          fi
+
+      - name: Generate sitemap
+        run: |
+          # Make script executable and set environment variable
+          chmod +x generate-sitemap.sh
+          export BASE_URL="https://yourdomain.com"  # Replace with your actual domain
+          ./generate-sitemap.sh
+
+      - name: Check for changes (including sitemap)
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD -- generated-data/ sitemap.xml; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add generated-data/ sitemap.xml
+          git commit -m "Daily sync: Update content and sitemap from repo2 ($(date +'%Y-%m-%d %H:%M:%S UTC'))"
+          git push

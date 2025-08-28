@@ -7,13 +7,14 @@
     "category": "eventi",
     "date": "2025-07-30",
     "author": "author",
-    "featured_image": "20250730-mostraDelFungo/mostradelfungo.jpeg",
+    "featured_image": "/articles/20250730-mostraDelFungo/mostradelfungo.jpeg",
     "images": [
-      "mostradelfungo.jpeg",
-      "amanita_habitat.jpeg"
+      "/articles/20250730-mostraDelFungo/mostradelfungo.jpeg",
+      "/articles/20250730-mostraDelFungo/amanita_habitat.jpeg"
     ],
-    "slug": "20250730-mostraDelFungo/20250730-mostraDelFungo.html",
-    "tags": []
+    "slug": "20250730-mostraDelFungo/content.html",
+    "tags": [],
+    "updated": "2025-08-28T15:28:21.578Z"
   },
   {
     "id": "20250808-ispettoratoMicologico2025",
@@ -28,8 +29,9 @@
       "micologo_lavoro.jpg",
       "funghi_analisi.jpg"
     ],
-    "slug": "20250808-ispettoratoMicologico2025/20250808-ispettoratoMicologico2025.html",
-    "tags": []
+    "slug": "20250808-ispettoratoMicologico2025/content.html",
+    "tags": [],
+    "updated": "2025-08-28T14:25:42.115Z"
   },
   {
     "id": "20250809-mostradelFungoApertura",
@@ -45,7 +47,7 @@
       "ramariaparabotrytis.jpg",
       "visitatori_mostra.jpg"
     ],
-    "slug": "20250809-mostradelFungoApertura/20250809-mostradelFungoApertura.html",
+    "slug": "20250809-mostradelFungoApertura/content.html",
     "tags": []
   }
 ]

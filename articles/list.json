@@ -42,16 +42,16 @@
     "title": "prova",
     "excerpt": "prova del workflow",
     "category": "eventi",
-    "status": "published",
+    "status": "ready",
     "author": "qm",
     "featured_image": "/articles/20250901-prova/20250807_162026_1756738597552.jpg",
     "date": "2025-09-01T14:55:54.361Z",
     "updated": "2025-09-01T15:02:27.101Z",
     "statusUpdated": {
-      "timestamp": "2025-09-01T17:40:46.833Z",
+      "timestamp": "2025-09-01T17:46:58.856Z",
       "gitUsername": "quackmore",
-      "fromStatus": "ready",
-      "toStatus": "published"
+      "fromStatus": "published",
+      "toStatus": "ready"
     }
   }
 ]

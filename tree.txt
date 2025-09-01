@@ -1,0 +1,23 @@
+articles/
+├── 20250730-mostraDelFungo
+│   ├── 20250730-mostraDelFungo.json
+│   ├── amanita_habitat.jpeg
+│   ├── content.html
+│   └── mostradelfungo.jpeg
+├── 20250808-ispettoratoMicologico2025
+│   ├── 20250808-ispettoratoMicologico2025.json
+│   ├── content.html
+│   ├── funghi_analisi.jpg
+│   └── micologo_lavoro.jpg
+├── 20250809-mostradelFungoApertura
+│   ├── 20250809-mostradelFungoApertura.json
+│   ├── content.html
+│   ├── mostradelfungo.jpeg
+│   ├── ramariaparabotrytis.jpg
+│   └── visitatori_mostra.jpg
+├── 20250831-prova
+│   ├── 20250807_162026_1756662866439.jpg
+│   └── content.html
+└── list.json
+
+4 directories, 16 files

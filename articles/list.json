@@ -23,12 +23,29 @@
   },
   {
     "id": "20250809-mostradelFungoApertura",
-    "status": "draft",
+    "status": "published",
     "title": "Inaugurata la 49ª Mostra del Fungo: oltre 260 specie in esposizione",
     "excerpt": "Aperta al pubblico la tradizionale manifestazione di Villa d'Ogna. Il primo giorno di mostra sono gia state identificate ed...",
     "category": "eventi",
     "date": "2025-08-09",
     "author": "author",
-    "featured_image": "20250809-mostradelFungoApertura/mostradelfungo.jpeg"
+    "featured_image": "20250809-mostradelFungoApertura/mostradelfungo.jpeg",
+    "statusUpdated": {
+      "timestamp": "2025-09-01T15:44:38.461Z",
+      "gitUsername": "quackmore",
+      "fromStatus": "ready",
+      "toStatus": "published"
+    }
+  },
+  {
+    "id": "20250901-prova",
+    "title": "prova",
+    "excerpt": "prova del workflow",
+    "category": "eventi",
+    "status": "draft",
+    "author": "qm",
+    "featured_image": "/articles/20250901-prova/20250807_162026_1756738597552.jpg",
+    "date": "2025-09-01T14:55:54.361Z",
+    "updated": "2025-09-01T15:02:27.101Z"
   }
 ]

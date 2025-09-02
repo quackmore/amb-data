@@ -53,16 +53,5 @@
       "fromStatus": "ready",
       "toStatus": "draft"
     }
-  },
-  {
-    "id": "20250902-nuova-prova",
-    "title": "Nuova prova",
-    "excerpt": "ancora una prova",
-    "category": "eventi",
-    "status": "draft",
-    "author": "qm",
-    "featured_image": "",
-    "date": "2025-09-02T12:43:54.332Z",
-    "updated": "2025-09-02T12:44:26.694Z"
   }
 ]

@@ -53,5 +53,22 @@
       "fromStatus": "ready",
       "toStatus": "draft"
     }
+  },
+  {
+    "id": "20250903-esame-microscopico-per-la-dete",
+    "title": "Esame microscopico per la determinazione",
+    "excerpt": "Un esempio di analisi microscopica su un piccolo Cortinarius",
+    "category": "tutorial",
+    "status": "draft",
+    "author": "qm",
+    "featured_image": "/articles/20250903-esame-microscopico-per-la-dete/WhatsApp_Image_2025-09-02_at_12_37_37__2__1756899807557.jpeg",
+    "date": "2025-09-03T11:34:12.858Z",
+    "updated": "2025-09-03T11:51:35.285Z",
+    "statusUpdated": {
+      "timestamp": "2025-09-03T11:52:27.733Z",
+      "gitUsername": "quackmore",
+      "fromStatus": "ready",
+      "toStatus": "draft"
+    }
   }
 ]
